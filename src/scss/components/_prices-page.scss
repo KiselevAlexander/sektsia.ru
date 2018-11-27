@@ -1,0 +1,26 @@
+.prices-page {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    h1, h2 {
+        font-size: 30px !important;
+        font-family: "bebas_neuebold";
+        letter-spacing: 0;
+        color: #000;
+        text-align: center;
+    }
+
+    .page-description {
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 780px;
+        margin: 0 auto;
+        color: #000;
+
+        &.-fluid {
+            max-width: 100%;
+        }
+    }
+}

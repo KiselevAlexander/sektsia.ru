@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('/fonts/roboto-regular.eot?') format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+    url('/fonts/roboto-regular.woff') format("woff"), /* все современные браузеры, IE9+ */
+    url('/fonts/roboto-regular.ttf') format("truetype"); /* все современные браузеры */
+}
+
+@font-face {
+    font-family: "Roboto-slab";
+    src: url('/fonts/robotoslab-regular.eot?') format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+    url('/fonts/robotoslab-regular.woff') format("woff"), /* все современные браузеры, IE9+ */
+    url('/fonts/robotoslab-regular.ttf') format("truetype"); /* все современные браузеры */
+}
+
+@font-face {
+    font-family: "Roboto-slab-bold";
+    src: url('/fonts/robotoslab-bold.eot?') format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+    url('/fonts/robotoslab-bold.woff') format("woff"), /* все современные браузеры, IE9+ */
+    url('/fonts/robotoslab-bold.ttf') format("truetype"); /* все современные браузеры */
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+.clip-cards-slider {
+
+    .irs-line {
+        height: 18px;
+        background: transparent !important;
+        border: none;
+
+        &-mid {
+            height: 2px;
+            width: 100%;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+        }
+
+
+        &-left,
+        &-right {
+            display: none;
+        }
+
+    }
+
+    .irs-slider {
+        top: 26px;
+        background: #000;
+        border: 2px solid #fff;
+        height: 16px;
+        width: 16px;
+        transition: background-color .4s;
+
+        &:before {
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            display: block;
+            width: 42px;
+            height: 42px;
+            content: '';
+        }
+
+        &:hover,
+        &:active {
+            background-color: #fff;
+        }
+    }
+
+    .irs-grid-pol {
+        width: 2px;
+        height: 5px;
+        background-color: #4a4a4a;
+    }
+
+    .irs-grid-text {
+        font-size: 10px;
+        color: #fff;
+    }
+
+    .irs-bar,
+    .irs-single,
+    .irs-bar-edge,
+    .irs-grid-pol.small {
+        display: none;
+    }
+}

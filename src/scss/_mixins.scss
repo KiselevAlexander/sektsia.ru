@@ -1,0 +1,24 @@
+@mixin flex() {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@mixin media-lg() {
+    @media (max-width: $media-lg) {
+        @content;
+    }
+}
+
+@mixin media-md() {
+    @media (max-width: $media-md) {
+        @content;
+    }
+}
+
+@mixin media-sm() {
+    @media (max-width: $media-sm) {
+        @content;
+    }
+}

@@ -1,0 +1,135 @@
+.clip-cards {
+    background-color: #000;
+    color: #fff;
+    padding: 41px 100px;
+
+    @include media-sm() {
+        padding: 24px 18px;
+    }
+
+    &-text {
+        font-size: 10px !important;
+        text-transform: uppercase;
+    }
+
+    &-list {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @include media-md() {
+            display: block;
+        }
+
+    }
+
+    &-card {
+        flex: 1 1 50%;
+        display: block;
+        width: 50%;
+        list-style: none !important;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 14px;
+
+        @include media-md() {
+            width: 100%;
+        }
+
+        [type="radio"] {
+            &:checked,
+            &:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            &:checked + label,
+            &:not(:checked) + label
+            {
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                line-height: 20px;
+                display: inline-block;
+            }
+            &:checked + label:before,
+            &:not(:checked) + label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 15px;
+                height: 15px;
+                border: 2px solid #fff;
+                border-radius: 100%;
+                background: transparent;
+            }
+            &:checked + label:after,
+            &:not(:checked) + label:after {
+                content: '';
+                width: 7px;
+                height: 7px;
+                background: #fff;
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                border-radius: 100%;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            &:not(:checked) + label:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+            &:checked + label:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+    }
+
+    &-variants {
+        margin-top: 60px;
+        position: relative;
+
+        &-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: right;
+
+            @include media-sm() {
+                position: relative;
+                right: auto;
+                text-align: left;
+            }
+        }
+
+        small {
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+        .count,
+        .cost {
+            font-family: "bebas_neuebold";
+            font-size: 30px;
+            line-height: 20px;
+            letter-spacing: 3px;
+            margin-top: 20px;
+            margin-bottom: 4px;
+        }
+
+        .clip-cards-card-period,
+        .clip-cards-cost-per-one {
+            color: #9b9b9b;
+        }
+
+    }
+
+}

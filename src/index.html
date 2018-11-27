@@ -1,0 +1,60 @@
+@@include('_includes/_header.htm')
+
+
+
+<script>
+    window.CLIP_CARDS = @@include('_includes/clip_cards.json');
+</script>
+
+
+<div class="prices-page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinHTML5.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <h1>ФИТНЕС-КЛУБ: ЦЕНЫ В МОСКВЕ</h1>
+
+    <div class="page-description">
+        При покупке членства “Секции” всем нашим клиентам выдаётся электронный идентификационный браслет, который позволяет войти в клуб, отметить занятия и служит ключом к шкафчику, 3 тренировки на выбор, фирменный шейкер, а также представляется скидка 20% на все последующие групповые тренировки и самостоятельные посещения.
+        <div class="mt25 mb25">
+            Для покупки необходимо:
+        </div>
+        <button class="-button -w300 -fz-small">
+            Войти/Зарегистрироваться
+        </button>
+    </div>
+
+
+    <h2>Подобрать оптимальный пакет тренировок</h2>
+
+    <div class="packages">
+        <ul class="packages-menu">
+            <li>
+                <button class="-button -fluid -active" data-tab="clipCards">Клип карты</button>
+            </li>
+            <li>
+                <button class="-button -fluid" data-tab="membership">Членство</button>
+            </li>
+            <li>
+                <button class="-button -fluid" data-tab="intensive">Месяц интенсива</button>
+            </li>
+        </ul>
+
+        <div class="packages-tabs">
+            <div id="clipCards" class="packages-tabs-tab -active">
+                @@include('_includes/packeges/_clipCards.htm')
+            </div>
+            <div id="membership" class="packages-tabs-tab">
+                @@include('_includes/packeges/_membership.htm')
+            </div>
+            <div id="intensive" class="packages-tabs-tab">
+                @@include('_includes/packeges/_intensive.htm')
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
+    <script src="/js/script.bundle.js"></script>
+</div>
+@@include('_includes/_footer.htm')

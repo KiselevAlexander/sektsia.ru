@@ -1,0 +1,182 @@
+$intensivePagging: 12px;
+
+@mixin info-showed() {
+    .intensive-info {
+        opacity: 1;
+        transition: opacity .4s;
+
+        & > * {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity .4s .2s, transform .4s .2s;
+        }
+    }
+}
+
+.intensives {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .intensive {
+        position: relative;
+        flex: 1 0 calc(25% - 16px);
+        background-color: #262626;
+        color: #fff;
+        padding: $intensivePagging;
+        margin: 0 8px;
+
+        @include media-lg() {
+            flex: 1 0 calc(50% - 16px);
+            margin-bottom: 16px;
+        }
+
+        @include media-sm() {
+            flex: 1 0 100%;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        &-image {
+            height: 550px;
+            width: calc(100% + 24px);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            margin-top: -$intensivePagging;
+            margin-left: -$intensivePagging;
+            margin-right: -$intensivePagging;
+
+            @include media-lg() {
+                background-position: 50% 0;
+            }
+
+        }
+
+        &-info {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, .9);
+            padding: 86px 18px 0 18px;
+            opacity: 0;
+            transition: opacity .4s .2s;
+
+            & > * {
+                opacity: 0;
+                transform: translateY(8px);
+                transition: opacity .4s, transform .4s;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 1.31;
+                letter-spacing: 1.3px;
+                padding-bottom: 32px;
+            }
+
+            .rules {
+                font-size: 10px;
+                line-height: 1.7;
+                letter-spacing: 1px;
+                color: #606060;
+                text-transform: uppercase;
+                padding-bottom: 0;
+            }
+
+            .benefits {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-bottom: 20px;
+
+                li {
+                    position: relative;
+                    display: block;
+                    font-size: 13px;
+                    line-height: 1.31;
+                    letter-spacing: 1.3px;
+                    margin-bottom: 10px;
+                    padding-left: 13px;
+
+                    &:before {
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        display: block;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #4a4a4a;
+                    }
+                }
+
+                &-caption {
+                    font-family: "bebas_neuebold", sans-serif;
+                    font-size: 20px;
+                    line-height: 0.85;
+                    letter-spacing: 2px;
+                    margin-bottom: 13px;
+                }
+            }
+
+        }
+
+        &-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        &-caption {
+            font-family: "bebas_neuebold", sans-serif;
+            font-size: 20px;
+            line-height: 0.71;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        &-description {
+            font-size: 10px;
+            line-height: 2;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        &-price {
+            font-family: "bebas_neuebold", sans-serif;
+            font-size: 20px;
+            line-height: 1;
+            letter-spacing: 2.8px;
+            text-align: center;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        &.-showed {
+            @include media-sm() {
+                @include info-showed();
+            }
+        }
+
+        &:hover {
+            @media (min-width: $media-sm) {
+                @include info-showed();
+            }
+        }
+
+        &-show-info {
+            display: none;
+            margin-bottom: 12px;
+
+            @include media-sm() {
+                display: block;
+            }
+        }
+
+    }
+}

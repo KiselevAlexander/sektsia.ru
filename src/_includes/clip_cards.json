@@ -1,0 +1,157 @@
+[
+  {
+    "id": "1231",
+    "name": "Самостоятельные / групповые тренировки",
+    "variants": [
+      {
+        "count": 1,
+        "cost": 3000,
+        "period": 10
+      },
+      {
+        "count": 10,
+        "cost": 5000,
+        "period": 20
+      },
+      {
+        "count": 20,
+        "cost": 10000,
+        "period": 30
+      },
+      {
+        "count": 30,
+        "cost": 25000,
+        "period": 90
+      },
+      {
+        "count": 50,
+        "cost": 50000,
+        "period": 180
+      }
+    ]
+  },
+  {
+    "id": "1232",
+    "name": "Секционные тренировки в мини-группах",
+    "variants": [
+      {
+        "count": 1,
+        "cost": 3000,
+        "period": 10
+      },
+      {
+        "count": 10,
+        "cost": 5000,
+        "period": 20
+      },
+      {
+        "count": 20,
+        "cost": 10000,
+        "period": 30
+      },
+      {
+        "count": 30,
+        "cost": 25000,
+        "period": 90
+      },
+      {
+        "count": 50,
+        "cost": 50000,
+        "period": 180
+      }
+    ]
+  },
+  {
+    "id": "1233",
+    "name": "Персональные тренировки",
+    "variants": [
+      {
+        "count": 1,
+        "cost": 3000,
+        "period": 10
+      },
+      {
+        "count": 10,
+        "cost": 5000,
+        "period": 20
+      },
+      {
+        "count": 20,
+        "cost": 10000,
+        "period": 30
+      },
+      {
+        "count": 30,
+        "cost": 25000,
+        "period": 90
+      },
+      {
+        "count": 50,
+        "cost": 50000,
+        "period": 180
+      }
+    ]
+  },
+  {
+    "id": "1234",
+    "name": "Персональные тренировки по боевым искусствам",
+    "variants": [
+      {
+        "count": 1,
+        "cost": 3000,
+        "period": 10
+      },
+      {
+        "count": 10,
+        "cost": 5000,
+        "period": 20
+      },
+      {
+        "count": 20,
+        "cost": 10000,
+        "period": 30
+      },
+      {
+        "count": 30,
+        "cost": 25000,
+        "period": 90
+      },
+      {
+        "count": 50,
+        "cost": 50000,
+        "period": 180
+      }
+    ]
+  },
+  {
+    "id": "1235",
+    "name": "Персональные тренировки с Экспертом",
+    "variants": [
+      {
+        "count": 1,
+        "cost": 3000,
+        "period": 10
+      },
+      {
+        "count": 10,
+        "cost": 5000,
+        "period": 20
+      },
+      {
+        "count": 20,
+        "cost": 10000,
+        "period": 30
+      },
+      {
+        "count": 30,
+        "cost": 25000,
+        "period": 90
+      },
+      {
+        "count": 50,
+        "cost": 50000,
+        "period": 180
+      }
+    ]
+  }
+]
